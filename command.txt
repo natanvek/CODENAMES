@@ -1,0 +1,10 @@
+git commit -am "lo que quieras sobre la actualizacion"
+
+git push heroku master
+
+para arrancar la app desde ell localhost abrir git cmd y escribir node app.js
+
+(commando)crear carpeta hacer cd ahi npm init todo enter y yes
+
+npm install express
+npm install socket.io

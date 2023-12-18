@@ -1,0 +1,87 @@
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+<html>
+
+<head>
+    <title>CODENAMES by NatanVek</title>
+    <link rel="stylesheet" type="text/css" media="screen and (max-aspect-ratio: 1/1)"
+        href="../client/css/cellphone.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-aspect-ratio: 1/1)" href="../client/css/computer.css">
+</head>
+
+<body>
+    <div id="home">
+        <div id="matchMaker" class="flexContainer">
+            <label class="label2">CREAR PARTIDO:</label>
+            <input id="newMatchInput" placeholder="ingrese el nombre del partido..." class="name" type="text">
+            <br>
+            <button class="buttonHome" onclick="newMatch()">CREAR</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label class="label2">INGRESAR A UN PARTIDO:</label>
+            <input id="enterMatchInput" placeholder="ingrese el nombre del partido..." class="name" type="text">
+            <br>
+            <button class="buttonHome" onclick="enterMatch()">INGRESAR</button>
+        </div>
+    </div>
+    <div id="game">
+        <div id="board" class="board centered"></div>
+        <div id="remainingWords" class="">
+            <SPAN id="remainingBlue" style="color: rgb(65, 131, 204);">9</SPAN>
+            <SPAN>-</SPAN>
+            <SPAN id="remainingRed" style="color: rgb(209, 48, 48);">8</SPAN>
+        </div>
+        <div id="flexClues">
+            <input id="inputClue" placeholder="Inserte su pista..." type="text">
+        </div>
+        <div id="spymaster" onclick="spymasterFunc();" class="button">
+            <SPAN>SPYMASTER + 0</SPAN>
+        </div>
+        <div id="player" onclick="playerFunc();" class="button">
+            <SPAN>PLAYER</SPAN>
+        </div>
+        <div id="nextGame" onclick="nextGameFunc();" class="button">
+            <SPAN>NEXT GAME</SPAN>
+        </div>
+
+        <div id="menuButton" onclick="openMenu();"></div>
+        <div id="bodyShadow">
+            <div id="menu">
+                <div id="teamMaker" class="flexContainer">
+                    <label class="label">Cantidad de equipos(2-4):</label>
+                    <input id="teams" class="inputNumber" type="number" min="2" max="4">
+                    <br>
+                    <label class="label">Cantidad de jugadores(4-16):</label>
+                    <input id="players" class="inputNumber" type="number" min="4" max="16">
+                    <br>
+                    <button onclick="createTeams()">CREAR</button>
+                </div>
+                <div id="addNames" class="flexContainer"></div>
+                <textarea id="inputWords" placeholder="Agregue palabras al listado aquí..." type="text"></textarea>
+
+            </div>
+
+
+        </div>
+
+        <div class="clock" id="clock" onclick="socket.emit('clickClock',undefined)">
+            <SPAN id="clockLetters">05:00</SPAN>
+        </div>
+    </div>
+</body>
+
+
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script type="text/javascript" src="../client/js/globalConsts.js"></script>
+<script type="text/javascript" src="../client/js/initialSetUp.js"></script>
+<script type="text/javascript" src="../client/js/addWords-Clock.js"></script>
+<script type="text/javascript" src="../client/js/player-spy-nextGame.js"></script>
+<script type="text/javascript" src="../client/js/clues.js"></script>
+<script type="text/javascript" src="../client/js/menu.js"></script>
+
+</html>

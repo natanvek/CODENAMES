@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* @font-face {
+    font-family: montserrat;
+    src: url("../MONTSERRAT/Montserrat-Regular.ttf");
+ } */
+ @keyframes open {
+    from {
+        left: -34.5vh;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes close {
+    from {
+        left: 0vw;
+    }
+
+    to {
+        left: -34.5vh;
+    }
+}
+#game {
+    display: none;
+}
+
+#home {
+    /* display: none; */
+    height: 100%;
+    width: 100%;
+    background-color: teal;
+    text-align: center;
+}
+body {
+    background-color: white;
+}
+.notReady{
+    display: none;
+}
+#board {
+    width: 95vw;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.cards {
+    cursor: pointer;
+    display: flex;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    background: #ebebeb
+}
+.cards span {
+    margin: auto;
+    color: black;
+    font-size: 2.1vw;
+    font-weight: bold;
+}
+
+#flexClues {
+    top: 10%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+
+#inputClue {
+    margin-left: 2vw;
+    height: 4vh;
+    width: 21vw;
+    background-color: rgb(227, 227, 227);
+    border: solid black 1px;
+    font-size: 3vw;
+    margin-left: calc(3vw + 1px);
+    margin-bottom: 1vw;
+
+}
+
+.clues {
+    margin-bottom: 1vw;
+    height: 4vh;
+    width: 21vw;
+    margin-left: 3vw;
+    cursor: pointer;
+    display: flex;
+    font-weight: bolder;
+    border: solid white 1px;
+}
+
+.clues span {
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 2.25vw;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+
+.clock {
+    cursor: pointer;
+    height: 15%;
+    width: 13%;
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    display: flex;
+    color: rgb(209, 48, 48);
+}
+
+.clock span {
+    margin: auto;
+    font-size: 9.5vw;
+}
+
+
+.button {
+    cursor: pointer;
+    display: flex;
+    height: 4%;
+    width: 22%;
+    background-color: ebebeb;
+    top: 90%;
+    left: 8.5%;
+    position: absolute;
+    border: solid black 1px;
+}
+
+#player {
+    left: 39%
+}
+
+#nextGame {
+    left: 69.5%
+}
+
+
+.button span {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.25vw;
+    font-weight: 600;
+}
+
+
+#remainingWords{
+    width: 25vw;
+    height: 4vh;
+    left: 50%;
+    top: 24%;
+    transform: translate(-50%);
+    position: absolute;
+    text-align: center;
+    font-size: 8vw;
+}
+.centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#bodyShadow {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.82);
+    z-index: 1;
+    position: absolute;
+}
+
+
+.flexContainer {
+    left: 50%;
+    transform: translate(-50%);
+    flex-direction: column;
+    height: 40vh;
+    display: flex;
+    text-align: center;
+    align-content: flex-start;
+    top: 10%;
+    position: absolute;
+}
+
+
+
+
+.name {
+    width: 40vh;
+    height: 6.9vh;
+    font-size: 2.6vh;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 2.73vh;
+}
+.buttonHome{
+    width: 23vh;
+    font-size: 2.73vh;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+}
+.label {
+    width: 29.3vh;
+    height: 3vh;
+    font-size: 2.25vh;
+    margin: 0.52vh;
+}
+.label2 {
+    width: 95vw;
+    height: 5.5vh;
+    font-size: 3.45vh;
+    margin: 0.69vh;
+}
+.team {
+    margin-top: 3.1vh;
+}
+
+.player {
+    margin: 0.52vh;
+}
+
+.inputNumber {
+    width: 6.9vh;
+    height: 5.2vh;
+    font-size: 2.73vh;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 1vh;
+}
+
+#menuButton {
+    width: 6.9vh;
+    cursor: pointer;
+    height: 6.9vh;
+    position: absolute;
+    left: 1vw;
+    top: 1vh;
+    background-image: url(../img/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+}
+#menu {
+    text-align: center;
+    left: -34.5vh;
+    width: 34.5vh;
+    height: 100vh;
+    position: absolute;
+    background-color: #ebebeb;
+}
+#inputWords {
+    height: 20.6vh;
+    width: 29.3vh;
+    background-color: rgb(227, 227, 227);
+    top: 60%;
+    left: 10px;
+    font-size: large;
+    position: absolute;
+}

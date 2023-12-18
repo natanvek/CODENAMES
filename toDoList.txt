@@ -1,0 +1,11 @@
+1) partidos en paralelo 
+
+2) editor de palabras(almacenar palabras ya listas y ordenadas alfabeticamente)
+
+3) mejorar version celular
+
+4) colocar addwords agregar al menu 
+
+5) tiempo editable agregar al menu
+
+6) agregar agrupaciones de palabras
