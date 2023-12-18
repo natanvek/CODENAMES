@@ -1,6 +1,4 @@
-# Nombre del Proyecto
-
-Codenames Personalizado
+# Codenames Personalizado
 
 ## Fecha de Realización
 
